@@ -13,7 +13,7 @@ const sendMail = (address, body) => {
         from: 'hardwareswapscraper@gmail.com',
         to: address,
         subject: 'Sending Email using Node.js',
-        text: body
+        html: body
       };
       
       transporter.sendMail(mailOptions, function(error, info){
